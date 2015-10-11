@@ -4,6 +4,17 @@ html {
 	font-family:pfennig,arial;
 }
 header {
+	h1 {
+		float: right;
+		text-align: right;
+		font-size: 4em;
+		font-weight: normal;
+		margin: 3.8% 0%;
+	}
+	img {
+		width: 5%;
+		float: right;
+	}
 	nav {
 		clear: both;
 	}
