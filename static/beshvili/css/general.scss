@@ -41,10 +41,6 @@ header {
 				text-align: center;
 				display: inline-block;
 				
-				&:nth-child(5){
-					background-color: #CCCCEE;
-					@extend .clear;
-				}
 				&:nth-child(1){
 					background-color: #CCEECC;
 				}
@@ -56,6 +52,13 @@ header {
 				}
 				&:nth-child(4){
 					background-color: #CECCCE;
+				}
+				&:nth-child(5){
+					background-color: #CCCCEE;
+				}
+				&:nth-child(5):after{
+					content: " ";
+					@extend .clear;
 				}
 			}
 		}
