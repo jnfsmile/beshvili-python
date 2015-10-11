@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="beshviliApp">
+<html>
 	<head>
 	    <meta charset="utf-8" />
 		<meta name="author" content="Galit Friedman" />
@@ -9,8 +9,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
+		{% load compress %}
+		{% compress css %}
 		<!-- add styles -->
-		<link href="/static/beshvili/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="/static/beshvili/css/style.scss" rel="stylesheet" type="text/scss" />
+		{% endcompress %}
 
 	</head>
 	<body>
