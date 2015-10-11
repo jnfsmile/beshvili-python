@@ -3,9 +3,6 @@ html {
   font-size: 62.5%;
   font-family: pfennig,arial; }
 
-header nav {
-  clear: both; }
-
 body {
   background: url(../img/bg.png);
   margin: auto;
