@@ -13,7 +13,8 @@ header img {
   width: 5%;
   float: right; }
 header nav {
-  clear: both; }
+  clear: both;
+  text-align: center; }
   header nav ul {
     text-align: center;
     display: inline-block;
