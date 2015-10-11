@@ -40,6 +40,7 @@ INSTALLED_APPS = (
 	'django.contrib.sites',
 	'django_comments',
 	'mptt',
+	'compressor',
 	'tagging',
 	'zinnia',
 )
@@ -111,6 +112,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/jnfsmile/beshvili/static'
+COMPRESS_ROOT = '/home/jnfsmile/beshvili/static'
 
 # Additional settings
 SITE_ID = 1
