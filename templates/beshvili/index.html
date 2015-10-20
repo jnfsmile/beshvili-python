@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		{% load staticfiles %}
 	    <meta charset="utf-8" />
 		<meta name="author" content="Galit Friedman" />
 		<title>בשבילי - אימון והדרכה</title>
 		<meta name="description" content="כיוון אישי לנשים מאותגרות פוריות">
 		
-		<link rel="icon" type="image/png" sizes="32x32" href=" {% static '/beshvili/img/favicon-32x32.png'%}">
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/beshvili/img/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="/static/beshvili/img/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/static/beshvili/img/favicon-16x16.png">
 
@@ -17,7 +16,7 @@
 		{% load compress %}
 		{% compress css %}
 		<!-- add styles -->
-		<link href="{% static '/beshvili/css/style.css' %}" rel="stylesheet" type="text/css" />
+		<link href="/static/beshvili/css/style.css" rel="stylesheet" type="text/css" />
 		{% endcompress %}
 
 	</head>
