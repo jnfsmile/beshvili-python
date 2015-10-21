@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'beshvili.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'indeximi_be-shvili',
-        'USER': 'root',
-        'PASSWORD': 'root7',
-        'HOST': 'localhost',
+        'NAME': 'jnfsmile$beshvili_DB',
+        'USER': 'jnfsmile',
+        'PASSWORD': 'beshvilidb19',
+        'HOST': 'jnfsmile.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -111,8 +111,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR + '/static'
-#COMPRESS_ROOT = BASE_DIR + '/static'
+STATIC_ROOT = '/home/jnfsmile/beshvili/static'
+COMPRESS_ROOT = '/home/jnfsmile/beshvili/static'
 
 # Additional settings
 SITE_ID = 1
