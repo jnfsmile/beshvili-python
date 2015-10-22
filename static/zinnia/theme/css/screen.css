@@ -199,6 +199,8 @@ table {
     background: none;
     margin: 0 0 1.5em 0;
     padding: 0 1.5em 0 0; }
+    .rtl .zinnia #header blockquote {
+      padding: 0 0 0 1.5em; }
   .zinnia #header form {
     float: right;
     clear: both;
@@ -248,8 +250,15 @@ table {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
       padding-left: 1.5em; }
+      .rtl .zinnia #header h1 {
+        background: transparent url("../img/logo.png") no-repeat scroll right center;
+        padding-left: 0em;
+        padding-right: 1.5em; }
     .zinnia #header blockquote {
-      margin-left: 6em; } }
+      margin-left: 6em; }
+      .rtl .zinnia #header blockquote {
+        margin-right: 6em;
+        margin-left: 0em; } }
 .zinnia .slider-container {
   height: auto;
   max-width: 800px;
