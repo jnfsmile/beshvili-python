@@ -28,10 +28,17 @@
       background-position: 5px center;
       padding-left: 25px;
       border-radius: 5px;
+	  .rtl & {
+			padding-right: 25px;
+			padding-left: 0px;
+		}
     }
     input[type=submit] {
       display: none;
     }
+	.rtl & {
+		float: left;
+	}
   }
 
   .top-navigation {
@@ -45,6 +52,10 @@
     .feeds {
       @include header-icon("rss.png");
     }
+	
+	.rtl & {
+		float: left;
+	}
   }
 
   @include breakpoint("small") {

@@ -210,8 +210,13 @@ table {
       background-position: 5px center;
       padding-left: 25px;
       border-radius: 5px; }
+      .rtl .zinnia #header form input[type=text] {
+        padding-right: 25px;
+        padding-left: 0px; }
     .zinnia #header form input[type=submit] {
       display: none; }
+    .rtl .zinnia #header form {
+      float: left; }
   .zinnia #header .top-navigation {
     margin: 0;
     float: right;
@@ -231,6 +236,8 @@ table {
     .zinnia #header .top-navigation .feeds {
       background: transparent url("../img/rss.png") no-repeat scroll left center;
       padding-left: 1.5em; }
+    .rtl .zinnia #header .top-navigation {
+      float: left; }
   @media (min-width: 480px) {
     .zinnia #header form, .zinnia #header .top-navigation {
       display: block; } }
