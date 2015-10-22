@@ -3,6 +3,50 @@ html {
   font-size: 62.5%;
   font-family: pfennig,arial; }
 
+.clear, header nav ul li:nth-child(5):after {
+  clear: both; }
+
+header h1.slogan {
+  float: right;
+  text-align: right;
+  font-size: 4em;
+  font-weight: normal;
+  margin: 4% 1% 0.5%; }
+header img {
+  width: 5%;
+  float: right; }
+header nav {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid #bbbbbb; }
+  header nav ul {
+    text-align: center;
+    display: inline-block;
+    width: 55%;
+    margin: 0%; }
+    header nav ul li {
+      list-style: none;
+      font-size: 3em;
+      float: right;
+      margin: 0% 3%;
+      padding: 0.6% 2%;
+      width: 10%;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer; }
+      header nav ul li:nth-child(1) {
+        background-color: #CCEECC; }
+      header nav ul li:nth-child(2) {
+        background-color: #EECCCC; }
+      header nav ul li:nth-child(3) {
+        background-color: #CCCEEC; }
+      header nav ul li:nth-child(4) {
+        background-color: #CECCCE; }
+      header nav ul li:nth-child(5) {
+        background-color: #CCCCEE; }
+      header nav ul li:nth-child(5):after {
+        content: " "; }
+
 body {
   background: url(../img/bg.png);
   margin: auto;
