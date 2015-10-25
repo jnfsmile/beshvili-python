@@ -66,9 +66,13 @@ header {
 					@extend .clear;
 				}
 				
-				&.disabled a {
-					color: #9595ff;
+				&.disabled{
 					cursor: default;
+
+					a {
+						color: #9595ff;
+						cursor: default;
+					}
 				}
 			}
 		}
