@@ -4,7 +4,7 @@
 <html lang="{{ LANGUAGE_CODE }}" dir="rtl" class="rtl">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %} - Zinnia's Weblog</title>
+    <title>{% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %} - בלוג בשבילי</title>
     <meta name="robots" content="follow, all" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{% block meta-description %}{% trans "Just another Zinnia weblog." %}{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
@@ -46,12 +46,12 @@
           </p>
         </form>
         <h1>
-          <a href="{% url 'zinnia:entry_archive_index' %}" title="Zinnia's Weblog" rel="home">
-            Zinnia's Weblog
+          <a href="{% url 'zinnia:entry_archive_index' %}" title="בלוג בשבילי" rel="home">
+            בלוג בשבילי
           </a>
         </h1>
         <blockquote>
-          <p>{% trans "Just another Zinnia weblog." %}</p>
+          <p>בשבילי - מקום בשבילך</p>
         </blockquote>
         {% block breadcrumbs %}{% endblock breadcrumbs %}
       </header>

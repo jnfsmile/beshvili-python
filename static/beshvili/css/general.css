@@ -6,6 +6,9 @@ html {
 .clear, header nav ul li:nth-child(5):after {
   clear: both; }
 
+a {
+  text-decoration: none; }
+
 header h1.slogan {
   float: right;
   text-align: right;
@@ -46,6 +49,11 @@ header nav {
         background-color: #CCCCEE; }
       header nav ul li:nth-child(5):after {
         content: " "; }
+      header nav ul li.disabled {
+        cursor: default; }
+        header nav ul li.disabled a {
+          color: #9595ff;
+          cursor: default; }
 
 body {
   background: url(../img/bg.png);
@@ -142,3 +150,5 @@ h2 {
 
 h3 {
   font-size: 2.4em; }
+
+/*# sourceMappingURL=general.css.map */

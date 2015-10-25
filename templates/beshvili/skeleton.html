@@ -1,0 +1,55 @@
+{% load i18n %}
+{% load staticfiles %}
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="utf-8">
+    <title>בשבילי - {% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %}</title>
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{% block meta-description %}{% trans "בשבילי, גלית פרידמן, הכוונה והדרכה מול אתגרי הפוריות" %}{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
+    <meta name="keywords" content="{% block meta-keywords %}גלית, פרידמן, בשבילי, פוריות, אימון{% endblock meta-keywords %}" />
+    <meta name="author" content="Galit Friedman" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    {% block meta %}{% endblock meta %}
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/beshvili/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/static/beshvili/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/beshvili/img/favicon-16x16.png">
+
+    <link rel="pingback" href="/xmlrpc/" />
+    <link rel="shortcut icon" href="{% static "zinnia/theme/img/favicon.ico" %}" />
+    <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
+
+	{% load compress %}
+	{% compress css %}
+	<!-- add styles -->
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{% static 'beshvili/css/style.css' %}" />
+	{% endcompress %}
+    {% block link %}{% endblock link %}
+
+    {% block script %}{% endblock script %}
+  </head>
+  <body class="{% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+	<div class="pseudo-bg"></div>
+    <div class="container">
+      <header>
+		    <img src="/static/beshvili/img/site-logo.png" />
+		    <h1 class="slogan">בשבילי<br>הכוונה והדרכה מול אתגרי הפוריות</h1>
+			<nav>
+			<ul>
+				<li><a href="/weblog">בלוג</a></li>
+				<li><a href="#">שירים</a></li>
+				<li><a href="#">אודות</a></li>
+				<li><a href="#">ספר</a></li>
+				<li><a href="#">פורום</a></li>
+			</ul>
+			</nav>
+		</header>
+		<section>
+			<h2>אתר נולד לאט לאט...</h2>
+		</section>
+		<footer></footer>
+    </div>
+  </body>
+</html>
