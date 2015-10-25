@@ -8,6 +8,10 @@ html {
 	clear: both;
 }
 
+a {
+	text-decoration: none;
+}
+
 header {
 	h1.slogan {
 		float: right;
@@ -60,6 +64,10 @@ header {
 				&:nth-child(5):after{
 					content: " ";
 					@extend .clear;
+				}
+				
+				&.disabled a {
+					color: #9595ff;
 				}
 			}
 		}
