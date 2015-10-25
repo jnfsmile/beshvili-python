@@ -50,7 +50,8 @@ header nav {
       header nav ul li:nth-child(5):after {
         content: " "; }
       header nav ul li.disabled a {
-        color: #9595ff; }
+        color: #9595ff;
+        cursor: default; }
 
 body {
   background: url(../img/bg.png);
