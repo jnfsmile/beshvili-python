@@ -74,13 +74,13 @@
   @include breakpoint("large") {
     h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
-	  background-size: 4.5% 100%;
       padding-left: 1.5em;
 	  .rtl & {
 		background: transparent url("../img/logo.png") no-repeat scroll right center;
 		padding-left: 0em;
 		padding-right: 1.5em;
 	  }
+	  background-size: 4.5% 100%;
     }
     blockquote {
       margin-left: 6em;

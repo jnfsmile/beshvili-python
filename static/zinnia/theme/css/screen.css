@@ -259,8 +259,8 @@ table {
   @media (min-width: 1024px) {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
-      background-size: 4.5% 100%;
-      padding-left: 1.5em; }
+      padding-left: 1.5em;
+      background-size: 4.5% 100%; }
       .rtl .zinnia #header h1 {
         background: transparent url("../img/logo.png") no-repeat scroll right center;
         padding-left: 0em;
@@ -539,7 +539,7 @@ table {
 .zinnia.default {
   color: #333;
   background-color: #fff;
-  background: transparent url("../img/background.gif") repeat-x scroll left top; }
+  background: transparent url("../img/bg.png") repeat-x scroll left top; }
   .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
     color: #333; }
   .zinnia.default a {
