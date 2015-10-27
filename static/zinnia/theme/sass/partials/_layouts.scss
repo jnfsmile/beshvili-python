@@ -42,6 +42,9 @@
     margin-right: auto;
     background-origin: content-box;
     background-clip: content-box;
+	position: relative;
+	top: 0em;
+	right: 0em;
     &:after {
       content: "";
       display: table;

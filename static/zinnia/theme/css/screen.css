@@ -164,7 +164,10 @@ table {
   margin-left: auto;
   margin-right: auto;
   background-origin: content-box;
-  background-clip: content-box; }
+  background-clip: content-box;
+  position: relative;
+  top: 0em;
+  right: 0em; }
   .zinnia .container:after {
     content: "";
     display: table;
@@ -259,10 +262,11 @@ table {
   @media (min-width: 1024px) {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
-      padding-left: 1.5em;
-      background-size: 4.5% 100%; }
+      background-size: 4.5% 100%;
+      padding-left: 1.5em; }
       .rtl .zinnia #header h1 {
         background: transparent url("../img/logo.png") no-repeat scroll right center;
+        background-size: 4.5% 100%;
         padding-left: 0em;
         padding-right: 1.5em; }
     .zinnia #header blockquote {
