@@ -146,6 +146,16 @@ table {
   .zinnia form ul.errorlist li {
     list-style: none;
     display: inline; }
+.zinnia div.pseudo-bg {
+  position: absolute;
+  opacity: 0.65;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0em;
+  left: 0em;
+  background: white;
+  z-index: -1; }
 .zinnia .container {
   *zoom: 1;
   max-width: 60em;
@@ -249,6 +259,7 @@ table {
   @media (min-width: 1024px) {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
+      background-size: 4.5% 100%;
       padding-left: 1.5em; }
       .rtl .zinnia #header h1 {
         background: transparent url("../img/logo.png") no-repeat scroll right center;
@@ -978,5 +989,3 @@ table {
       color: white; }
     .zinnia .success a:active {
       color: white; }
-
-/*# sourceMappingURL=screen.css.map */
