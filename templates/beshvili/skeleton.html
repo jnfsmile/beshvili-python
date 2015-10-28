@@ -6,31 +6,26 @@
     <meta charset="utf-8">
     <title>בשבילי - {% block title %}{% endblock title %}{% block title-page %}{% endblock title-page %}</title>
     <meta name="robots" content="follow, all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="description" content="{% block meta-description %}{% trans "בשבילי, גלית פרידמן, הכוונה והדרכה מול אתגרי הפוריות" %}{% endblock meta-description %}{% block meta-description-page %}{% endblock meta-description-page %}" />
     <meta name="keywords" content="{% block meta-keywords %}גלית, פרידמן, בשבילי, פוריות, אימון{% endblock meta-keywords %}" />
     <meta name="author" content="Galit Friedman" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     {% block meta %}{% endblock meta %}
 
-	<link rel="icon" type="image/png" sizes="32x32" href="/static/beshvili/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/static/beshvili/img/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/static/beshvili/img/favicon-16x16.png">
-
-    <link rel="pingback" href="/xmlrpc/" />
-    <link rel="shortcut icon" href="{% static "zinnia/theme/img/favicon.ico" %}" />
-    <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static "beshvili/img/favicon-32x32.png" %}>
+	<link rel="icon" type="image/png" sizes="96x96" href="{% static "beshvili/img/favicon-96x96.png" %}>
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static "beshvili/img/favicon-16x16.png" %}>
+    <link rel="shortcut icon" href="{% static "beshvili/img/favicon.ico" %}" />
 
 	{% load compress %}
 	{% compress css %}
 	<!-- add styles -->
 	<link rel="stylesheet" type="text/css" media="screen, projection" href="{% static 'beshvili/css/style.css' %}" />
+    {% block css %}{% endblock css %}
 	{% endcompress %}
-    {% block link %}{% endblock link %}
-
-    {% block script %}{% endblock script %}
   </head>
-  <body class="{% block theme-class %}default{% endblock theme-class %} {% block color-class %}blue{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+  <body class="{% block body-class %}{% endblock body-class %}">
 	<div class="pseudo-bg"></div>
     <div class="container">
       <header>
@@ -51,5 +46,11 @@
 		</section>
 		<footer></footer>
     </div>
+	{% compress js %}
+	<!-- add javascripts -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/static/beshvili/js/general.js"></script>
+    {% block script %}{% endblock script %}
+	{% endcompress %}
   </body>
 </html>

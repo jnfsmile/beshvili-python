@@ -1,0 +1,66 @@
+header {
+	h1.slogan {
+		float: right;
+		text-align: right;
+		font-size: 4em;
+		font-weight: normal;
+		margin: 4% 1% 0.5%;
+	}
+	img {
+		width: 5%;
+		float: right;
+	}
+	nav {
+		clear: both;
+		text-align: center;
+		border-top: 1px solid #bbbbbb;
+		
+		ul {
+			text-align: center;
+			display: inline-block;
+			width: 80em;
+			margin: 0%;
+			
+			li {
+				list-style: none;
+				font-size: 3em;
+				float: right;
+				margin: 0% 3%;
+				padding: 0.6% 2%;
+				width: 2.5em;
+				text-align: center;
+				display: inline-block;
+				cursor: pointer;
+				
+				&:nth-child(1){
+					background-color: #CCEECC;
+				}
+				&:nth-child(2){
+					background-color: #EECCCC;
+				}
+				&:nth-child(3){
+					background-color: #CCCEEC;
+				}
+				&:nth-child(4){
+					background-color: #CECCCE;
+				}
+				&:nth-child(5){
+					background-color: #CCCCEE;
+				}
+				&:nth-child(5):after{
+					content: " ";
+					@extend .clear;
+				}
+				
+				&.disabled{
+					cursor: default;
+
+					a {
+						color: #9595ff;
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
+}
