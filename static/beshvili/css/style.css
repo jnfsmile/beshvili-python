@@ -1,14 +1,22 @@
+.clear, header nav ul li:nth-child(5):after {
+  clear: both; }
+
+.clear, header nav ul li:nth-child(5):after {
+  clear: both; }
+
 header .slogan {
   float: right;
-  margin: 0em 7em; }
+  margin: 0em 3em; }
   header .slogan h1 {
     text-align: right;
     font-size: 6em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0em; }
   header .slogan h2 {
     text-align: right;
     font-size: 4em;
-    font-weight: normal; }
+    font-weight: normal;
+    margin: -1em 0em; }
 header img {
   width: 6.5em;
   float: right; }
@@ -19,7 +27,7 @@ header nav {
   header nav ul {
     text-align: center;
     display: inline-block;
-    width: 80em;
+    width: 90em;
     margin: 0%; }
     header nav ul li {
       list-style: none;
@@ -53,9 +61,6 @@ html {
   direction: rtl;
   font-size: 62.5%;
   font-family: pfennig,arial; }
-
-.clear, header nav ul li:nth-child(5):after {
-  clear: both; }
 
 a {
   text-decoration: none; }

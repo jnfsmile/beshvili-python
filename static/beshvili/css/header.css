@@ -1,0 +1,57 @@
+.clear, header nav ul li:nth-child(5):after {
+  clear: both; }
+
+header .slogan {
+  float: right;
+  margin: 0em 3em; }
+  header .slogan h1 {
+    text-align: right;
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0em; }
+  header .slogan h2 {
+    text-align: right;
+    font-size: 4em;
+    font-weight: normal;
+    margin: -1em 0em; }
+header img {
+  width: 6.5em;
+  float: right; }
+header nav {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid #bbbbbb; }
+  header nav ul {
+    text-align: center;
+    display: inline-block;
+    width: 90em;
+    margin: 0%; }
+    header nav ul li {
+      list-style: none;
+      font-size: 3em;
+      float: right;
+      margin: 0% 1em;
+      padding: 0.6% 2%;
+      width: 2.5em;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer; }
+      header nav ul li:nth-child(1) {
+        background-color: #CCEECC; }
+      header nav ul li:nth-child(2) {
+        background-color: #EECCCC; }
+      header nav ul li:nth-child(3) {
+        background-color: #CCCEEC; }
+      header nav ul li:nth-child(4) {
+        background-color: #CECCCE; }
+      header nav ul li:nth-child(5) {
+        background-color: #CCCCEE; }
+      header nav ul li:nth-child(5):after {
+        content: " "; }
+      header nav ul li.disabled {
+        cursor: default; }
+        header nav ul li.disabled a {
+          color: #9595ff;
+          cursor: default; }
+
+/*# sourceMappingURL=header.css.map */

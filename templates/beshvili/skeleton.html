@@ -36,16 +36,16 @@
 			</div>
 			<nav>
 			<ul>
-				<li><a href="/weblog">בלוג</a></li>
-				<li><a href="#">שירים</a></li>
-				<li><a href="#">אודות</a></li>
-				<li><a href="#">ספר</a></li>
-				<li><a href="#">פורום</a></li>
+				<li class="disabled"><a href="/weblog">בלוג</a></li>
+				<li class="disabled"><a href="#">שירים</a></li>
+				<li class="disabled"><a href="#">אודות</a></li>
+				<li class="disabled"><a href="#">ספר</a></li>
+				<li class="disabled"><a href="#">פורום</a></li>
 			</ul>
 			</nav>
 		</header>
 		<section>
-			<h2>אתר נולד לאט לאט...</h2>
+		{% block main-content %}{% endblock main-content %}
 		</section>
 		<footer></footer>
     </div>
