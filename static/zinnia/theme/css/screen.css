@@ -146,6 +146,16 @@ table {
   .zinnia form ul.errorlist li {
     list-style: none;
     display: inline; }
+.zinnia div.pseudo-bg {
+  position: absolute;
+  opacity: 0.65;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0em;
+  left: 0em;
+  background: white;
+  z-index: -1; }
 .zinnia .container {
   *zoom: 1;
   max-width: 60em;
@@ -154,7 +164,10 @@ table {
   margin-left: auto;
   margin-right: auto;
   background-origin: content-box;
-  background-clip: content-box; }
+  background-clip: content-box;
+  position: relative;
+  top: 0em;
+  right: 0em; }
   .zinnia .container:after {
     content: "";
     display: table;
@@ -249,9 +262,11 @@ table {
   @media (min-width: 1024px) {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
+      background-size: 4.5% 100%;
       padding-left: 1.5em; }
       .rtl .zinnia #header h1 {
         background: transparent url("../img/logo.png") no-repeat scroll right center;
+        background-size: 4.5% 100%;
         padding-left: 0em;
         padding-right: 1.5em; }
     .zinnia #header blockquote {
@@ -528,7 +543,7 @@ table {
 .zinnia.default {
   color: #333;
   background-color: #fff;
-  background: transparent url("../img/background.gif") repeat-x scroll left top; }
+  background: transparent url("../img/bg.png") repeat-x scroll left top; }
   .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
     color: #333; }
   .zinnia.default a {
@@ -978,5 +993,3 @@ table {
       color: white; }
     .zinnia .success a:active {
       color: white; }
-
-/*# sourceMappingURL=screen.css.map */
