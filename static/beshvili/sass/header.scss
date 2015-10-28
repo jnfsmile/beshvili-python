@@ -1,21 +1,22 @@
 header {
 	.slogan {
 		float: right;
-		text-align: right;
+		margin: 0em 7em;
 		
 		h1 {
+			text-align: right;
 			font-size: 6em;
 			font-weight: bold;
-			margin: 4% 1% 0.5%;
 		}
 
 		h2 {
+			text-align: right;
 			font-size: 4em;
 			font-weight: normal;
 		}
 	}
 	img {
-		width: 5%;
+		width: 6.5em;
 		float: right;
 	}
 	nav {
@@ -33,7 +34,7 @@ header {
 				list-style: none;
 				font-size: 3em;
 				float: right;
-				margin: 0% 3%;
+				margin: 0% 1em;
 				padding: 0.6% 2%;
 				width: 2.5em;
 				text-align: center;
