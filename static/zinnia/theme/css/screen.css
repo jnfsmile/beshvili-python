@@ -205,8 +205,8 @@ table {
     margin-top: 0.5em;
     margin-bottom: 0;
     font-weight: bold; }
-    .zinnia #header h1:first-letter {
-      font-size: 130%; }
+    .zinnia #header h1 a {
+      text-decoration: none; }
   .zinnia #header blockquote {
     border: none;
     background: none;
@@ -543,7 +543,7 @@ table {
 .zinnia.default {
   color: #333;
   background-color: #fff;
-  background: transparent url("../img/bg.png") repeat-x scroll left top; }
+  background: transparent url("../img/bg.png") repeat scroll left top; }
   .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
     color: #333; }
   .zinnia.default a {
@@ -993,3 +993,5 @@ table {
       color: white; }
     .zinnia .success a:active {
       color: white; }
+
+/*# sourceMappingURL=screen.css.map */
