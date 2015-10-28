@@ -1,22 +1,16 @@
-html {
-  direction: rtl;
-  font-size: 62.5%;
-  font-family: pfennig,arial; }
-
-.clear, header nav ul li:nth-child(5):after {
-  clear: both; }
-
-a {
-  text-decoration: none; }
-
-header h1.slogan {
+header .slogan {
   float: right;
-  text-align: right;
-  font-size: 4em;
-  font-weight: normal;
-  margin: 4% 1% 0.5%; }
+  margin: 0em 7em; }
+  header .slogan h1 {
+    text-align: right;
+    font-size: 6em;
+    font-weight: bold; }
+  header .slogan h2 {
+    text-align: right;
+    font-size: 4em;
+    font-weight: normal; }
 header img {
-  width: 5%;
+  width: 6.5em;
   float: right; }
 header nav {
   clear: both;
@@ -25,15 +19,15 @@ header nav {
   header nav ul {
     text-align: center;
     display: inline-block;
-    width: 55%;
+    width: 80em;
     margin: 0%; }
     header nav ul li {
       list-style: none;
       font-size: 3em;
       float: right;
-      margin: 0% 3%;
+      margin: 0% 1em;
       padding: 0.6% 2%;
-      width: 10%;
+      width: 2.5em;
       text-align: center;
       display: inline-block;
       cursor: pointer; }
@@ -55,12 +49,23 @@ header nav {
           color: #9595ff;
           cursor: default; }
 
+html {
+  direction: rtl;
+  font-size: 62.5%;
+  font-family: pfennig,arial; }
+
+.clear, header nav ul li:nth-child(5):after {
+  clear: both; }
+
+a {
+  text-decoration: none; }
+
 body {
   background: url(../img/bg.png);
   margin: auto;
-  width: 90%;
+  width: 110em;
   position: relative;
-  padding: 2%; }
+  padding: 2em; }
   body h1,
   body h2,
   body h3 {
@@ -150,3 +155,5 @@ h2 {
 
 h3 {
   font-size: 2.4em; }
+
+/*# sourceMappingURL=general.css.map */
